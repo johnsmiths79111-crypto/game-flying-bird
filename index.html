@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Clone - Tugas Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="400" height="500"></canvas>
+        
+        <div id="gameOverScreen" class="hidden">
+            <h2>GAME OVER</h2>
+            <p>Skor Kamu: <span id="finalScore">0</span></p>
+            <button id="restartBtn">Main Lagi</button>
+        </div>
+    </div>
+
+    <audio id="bgMusic" src="backsound.mp3" loop></audio>
+    <audio id="hitSound" src="jatuh.mp3"></audio>
+    <audio id="jumpSound" src="lompat.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
